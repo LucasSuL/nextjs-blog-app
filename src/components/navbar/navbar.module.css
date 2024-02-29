@@ -17,6 +17,11 @@
   font-weight: bold;
 }
 
+/* .link{
+  color: inherit;
+  text-decoration: none;
+} */
+
 .links {
   display: flex;
   align-items: center;

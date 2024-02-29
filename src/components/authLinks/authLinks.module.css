@@ -12,6 +12,10 @@
   height: 2px;
   background-color: var(--textColor);
 }
+/* .link{
+  color: inherit;
+  text-decoration: none;
+} */
 
 @media screen and (max-width: 640px) {
   .burger {

@@ -29,45 +29,45 @@ a {
   --softTextColor: #a6a6a6;
 }
 
-.container {
+.theme {
   min-height: 100vh;
   background-color: var(--bg);
   color: var(--textColor);
 }
-.wrapper {
+
+.content {
   max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 80px;
-  padding-right: 80px;
 }
 
-@media screen and (max-width: 1536px) {
-  .wrapper {
+.softText{
+  color:var(--softTextColor)
+}
+/* @media screen and (max-width: 1536px) {
+  .root {
     max-width: 1366px;
   }
 }
 
 @media screen and (max-width: 1280px) {
-  .wrapper {
+  .root {
     max-width: 1024px;
   }
 }
 
 @media screen and (max-width: 1024px) {
-  .wrapper {
+  .root {
     max-width: 768px;
     padding-left: 40px;
     padding-right: 40px;
   }
 }
 @media screen and (max-width: 768px) {
-  .wrapper {
+  .root {
     max-width: 640px;
   }
 }
 @media screen and (max-width: 640px) {
-  .wrapper {
+  .root {
     max-width: 475px;
   }
-}
+} */

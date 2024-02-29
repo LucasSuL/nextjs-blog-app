@@ -5,15 +5,16 @@ import CategoryList from "@/components/categoryList/CategoryList";
 import CardList from "@/components/cardList/CardList";
 import Menu from "@/components/menu/Menu";
 
-
 export default function Home() {
   return (
-    <div className="styles.container">
+    <div>
       <Featured />
       <CategoryList />
-      <div className="styles.container">
-        <CardList />
-        <Menu />
+      <div className="container">
+        <div className="row d-flex">
+          <CardList />
+          <Menu />
+        </div>
       </div>
     </div>
   );

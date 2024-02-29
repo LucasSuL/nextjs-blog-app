@@ -3,7 +3,7 @@ import styles from './menu.module.css'
 
 const Menu = () => {
   return (
-    <div className={styles.container}>menu</div>
+    <div className='col border'>menu</div>
   )
 }
 

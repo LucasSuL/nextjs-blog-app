@@ -39,8 +39,11 @@ a {
   max-width: 1536px;
 }
 
-.softText{
-  color:var(--softTextColor)
+.softText {
+  color: var(--softTextColor);
+}
+.fs-7 {
+  font-size: 14px;
 }
 /* @media screen and (max-width: 1536px) {
   .root {

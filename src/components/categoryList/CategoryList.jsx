@@ -14,25 +14,29 @@ const CategoryList = () => {
   ];
   const categories = catNames.map((cat, index) => {
     return (
-      <div
-        key={cat}
-        className={styles.category}
-        style={{ backgroundColor: catColors[index] }}
-      >
-        <Image
-          className={styles.img}
-          src={`/${cat}.png`}
-          width={32}
-          height={32}
-        ></Image>
-        <p className={styles.text}>{cat}</p>
+      <div className="col">
+        <div
+          key={cat}
+          className="d-flex align-items-center justify-content-center gap-2 rounded p-3 mt-4 text-capitalize"
+          style={{ backgroundColor: catColors[index] }}
+        >
+          <Image
+            className="rounded-5"
+            src={`/${cat}.png`}
+            width={32}
+            height={32}
+          ></Image>
+          <p className="m-0">{cat}</p>
+        </div>
       </div>
     );
   });
   return (
-    <div className={styles.container}>
-      <h2 className={styles.title}>Popular Categories</h2>
-      <div className={styles.categories}>{categories}</div>
+    <div className="container border">
+      <h2 className="mt-5">Popular Categories</h2>
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-lg-6">
+        {categories}
+      </div>
     </div>
   );
 };

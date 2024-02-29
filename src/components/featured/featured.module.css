@@ -1,19 +1,11 @@
-.post {
-  margin-top: 60px;
-  display: flex;
-  align-items: center;
-  gap: 50px;
+.title {
+  font-size: 80px;
 }
-
-.button{
-  padding: 8px 15px;
-  width: max-content;
-  border: none;
-  border-radius: 5px;
-}
-
+/* .img{
+  object-fit: cover;
+} */
 @media screen and (max-width: 1280px) {
-  .title{
+  .title {
     font-size: 60px;
   }
 }

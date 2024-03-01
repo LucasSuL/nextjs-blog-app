@@ -3,9 +3,9 @@ import Pagination from "@/components/Pagination";
 
 const CardList = () => {
   return (
-    <div className="col-8 border">
+    <div className="col-12 col-md-8">
       <h2 className="mt-5">Recent Posts</h2>
-      <div className="row row-cols-1 row-cols-sm-2 mt-4">
+      <div className="row row-cols-1 row-cols-lg-2 mt-4">
         <div className="col mt-4">
           <img className="rounded w-100" src="/p1.jpeg" alt=""></img>
         </div>
@@ -30,7 +30,8 @@ const CardList = () => {
           </p>
         </div>
       </div>
-      <div className="row row-cols-1 row-cols-sm-2 mt-4">
+      
+      <div className="row row-cols-1 row-cols-lg-2 mt-4">
         <div className="col mt-4">
           <img className="rounded w-100" src="/p1.jpeg" alt=""></img>
         </div>
@@ -55,6 +56,7 @@ const CardList = () => {
           </p>
         </div>
       </div>
+
       <div className="mt-4">
         <Pagination />
       </div>

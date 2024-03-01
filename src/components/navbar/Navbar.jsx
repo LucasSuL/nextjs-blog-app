@@ -8,7 +8,7 @@ import AuthLinks from "../authLinks/AuthLinks";
 
 const Navbar = () => {
   return (
-    <div className="container border">
+    <div className="container">
       <div className={styles.nav}>
         <div className={styles.social}>
           <Image src="/facebook.png" alt="facebook" width={24} height={24} />

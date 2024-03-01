@@ -3,14 +3,14 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div className="container border">
+    <div className="container pb-5">
       <div className="mt-5 row">
-        <div className="col-12 col-sm-6 col-lg-8 border">
+        <div className="col-12 col-sm-6 col-lg-8">
           <div className="d-flex align-items-center gap-3">
             <Image width={45} height={45} src="/logo.png"></Image>
-            <p className="m-0">Lucassublog</p>
+            <p className="m-0 fw-bold fs-3">Lucassublog</p>
           </div>
-          <p className="mt-3 ">
+          <p className="mt-3 pe-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
             aut libero facilis consectetur commodi amet ab nostrum numquam!
             Quas, non?
@@ -27,9 +27,9 @@ const Footer = () => {
             <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
           </div>
         </div>
-        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-between border mt-3">
+        <div className="col-12 col-sm-6 col-lg-4 d-flex justify-content-between mt-3">
           <div className="d-flex flex-column">
-            <p className="fw-bold">Links</p>
+            <p className="fw-bold fs-5">Links</p>
             <li className="d-flex flex-column fs-7 text-soft gap-2">
               <a>Homepage</a>
               <a>Blog</a>
@@ -38,7 +38,7 @@ const Footer = () => {
             </li>
           </div>
           <div className="d-flex flex-column">
-            <p className="fw-bold">Tags</p>
+            <p className="fw-bold fs-5">Tags</p>
             <li className="d-flex flex-column fs-7 text-soft gap-2">
               <a>Style</a>
               <a>Fashion</a>
@@ -47,7 +47,7 @@ const Footer = () => {
             </li>
           </div>
           <div className="d-flex flex-column">
-            <p className="fw-bold">Social</p>
+            <p className="fw-bold fs-5">Social</p>
             <li className="d-flex flex-column fs-7 text-soft gap-2">
               <a>Facebook</a>
               <a>Instagram</a>

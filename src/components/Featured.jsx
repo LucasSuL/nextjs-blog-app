@@ -2,7 +2,7 @@ import React from "react";
 
 const Featured = () => {
   return (
-    <div className="container mt-3 border">
+    <div className="container mt-3">
       <h1 className="display-1 fw-medium">
         <strong>Hey! Lucas here! </strong>Discover my stories and ideas!
       </h1>

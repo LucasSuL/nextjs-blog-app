@@ -1,11 +1,9 @@
 import React from "react";
-import styles from "./featured.module.css";
-import Image from "next/image";
 
 const Featured = () => {
   return (
     <div className="container mt-3 border">
-      <h1 className={styles.title}>
+      <h1 className="display-1 fw-medium">
         <strong>Hey! Lucas here! </strong>Discover my stories and ideas!
       </h1>
       <div className="row row-cols-1 row-cols-md-2 mt-5 d-flex align-items-center">
@@ -14,7 +12,7 @@ const Featured = () => {
         </div>
         <div className="col">
           <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-          <p className="softText fs-7">
+          <p className="text-soft fs-7">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
             tempore recusandae, sed in dicta, quidem fugit aliquam qui nostrum
             et consequatur, eum quibusdam ut? Nisi natus iste officia, iusto

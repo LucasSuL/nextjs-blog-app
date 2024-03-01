@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "./cardList.module.css";
-import Pagination from "@/components/pagination/Pagination";
+import Pagination from "@/components/Pagination";
 
 const CardList = () => {
   return (
-    <div className="col-9 border">
+    <div className="col-8 border">
       <h2 className="mt-5">Recent Posts</h2>
       <div className="row row-cols-1 row-cols-sm-2 mt-4">
         <div className="col mt-4">
@@ -15,7 +14,7 @@ const CardList = () => {
           <h3 className="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
-          <p className="mt-4 softText">
+          <p className="mt-4 text-soft">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Temporibus, porro quidem illum distinctio nam, magni natus tempora
             delectus nihil ducimus assumenda commodi ex voluptate ea similique
@@ -40,7 +39,7 @@ const CardList = () => {
           <h3 className="mt-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h3>
-          <p className="mt-4 softText">
+          <p className="mt-4 text-soft">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
             Temporibus, porro quidem illum distinctio nam, magni natus tempora
             delectus nihil ducimus assumenda commodi ex voluptate ea similique

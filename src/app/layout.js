@@ -1,7 +1,7 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
+import Footer from "@/components/Footer";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
 import "bootstrap/dist/css/bootstrap.min.css";

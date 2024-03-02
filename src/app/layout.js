@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { ThemeContextProvider } from "@/context/ThemeContext";
 import ThemeProvider from "@/providers/ThemeProvider";
 import "bootstrap/dist/css/bootstrap.min.css";
+import AuthProvider from "@/providers/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,15 +18,17 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ThemeContextProvider>
-          <ThemeProvider>
-            <div className="theme">
-              <Navbar />
-              <div className="content">{children}</div>
-              <Footer />
-            </div>
-          </ThemeProvider>
-        </ThemeContextProvider>
+        <AuthProvider>
+          <ThemeContextProvider>
+            <ThemeProvider>
+              <div className="theme">
+                <Navbar />
+                <div className="content">{children}</div>
+                <Footer />
+              </div>
+            </ThemeProvider>
+          </ThemeContextProvider>
+        </AuthProvider>
       </body>
     </html>
   );

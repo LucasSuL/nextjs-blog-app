@@ -37,7 +37,7 @@ const CategoryList = async () => {
                   height={32}
                 ></Image>
               )}
-              <p className="m-0 text-decoration-none">{item.title}</p>
+              <p className="m-0">{item.title}</p>
             </Link>
           </div>
         ))}

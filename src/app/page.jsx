@@ -4,14 +4,15 @@ import CategoryList from "@/components/CategoryList";
 import CardList from "@/components/CardList";
 import Menu from "@/components/Menu";
 
-export default function Home() {
+export default function Home({searchParams}) {
+  const page = parseInt(searchParams.page) || 1;
   return (
     <div>
       <Featured />
       <CategoryList />
       <div className="container">
         <div className="row d-flex">
-          <CardList />
+          <CardList page={page}/>
           <Menu />
         </div>
       </div>

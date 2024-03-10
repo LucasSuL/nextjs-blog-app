@@ -1,31 +1,26 @@
-import React from "react";
+"use client";
+import { useRouter } from "next/navigation";
 
-const Pagination = () => {
+const Pagination = ({ page, hasPrev, hasNext }) => {
+  const router = useRouter();
   return (
     <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-center">
-        <li class="page-item disabled">
+      <ul class="pagination justify-content-center ">
+        <li
+          class={`page-item ${hasPrev ? "" : "disabled"}`}
+          onClick={hasPrev ? () => router.push(`?page=${page - 1}`) : undefined}
+        >
           <a class="page-link">Previous</a>
         </li>
         <li class="page-item">
-          <a class="page-link" href="#">
-            1
-          </a>
+          <a class="page-link">{page}</a>
         </li>
-        <li class="page-item">
-          <a class="page-link" href="#">
-            2
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">
-            3
-          </a>
-        </li>
-        <li class="page-item">
-          <a class="page-link" href="#">
-            Next
-          </a>
+
+        <li
+          class={`page-item ${hasNext ? "" : "disabled"}`}
+          onClick={hasNext ? () => router.push(`?page=${page + 1}`) : undefined}
+        >
+          <a class="page-link">Next</a>
         </li>
       </ul>
     </nav>

@@ -6,8 +6,8 @@ const SinglePage = () => {
   return (
     <div className="container">
       <div className="row" style={{ height: "350px" }}>
-        <div className="col d-flex flex-column">
-          <h1 className="fs-0 fw-bold">
+        <div className="col-12 col-md-6 d-flex flex-column">
+          <h1 className="fw-bold display-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h1>
           <div className="mt-3 d-flex">
@@ -28,7 +28,7 @@ const SinglePage = () => {
         </div>
 
         <div
-          className="col position-relative"
+          className="col-6 position-relative"
           style={{ width: "100%", height: "100%", overflow: "hidden" }}
         >
           <Image
@@ -36,7 +36,7 @@ const SinglePage = () => {
             alt=""
             layout="fill"
             objectFit="cover"
-            className="position-absolute top-0 start-0 rounded"
+            className="position-absolute top-0 start-0 rounded d-none d-md-block"
           ></Image>
         </div>
       </div>

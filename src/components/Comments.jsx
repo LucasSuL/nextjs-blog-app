@@ -3,27 +3,31 @@ import React from "react";
 
 const Comments = () => {
   const authenticated = "authenticated";
-  {
-    authenticated === "authenticated" ? (
-      <div>write a comment</div>
-    ) : (
-      <div>pls login first</div>
-    );
-  }
+
   return (
     <div className="mt-5">
       <h3>Comments</h3>
-      <div>
-        <textarea
-          class="form-control mt-3"
-          id="exampleFormControlTextarea1"
-          placeholder="write a comment..."
-          rows="5"
-        ></textarea>
-        <button type="button" class="btn btn-success mt-3">
-          Send
-        </button>
-      </div>
+      {authenticated === "authenticated" ? (
+        <div>
+          <textarea
+            class="form-control mt-3"
+            id="exampleFormControlTextarea1"
+            placeholder="write a comment..."
+            rows="5"
+          ></textarea>
+          <button type="button" class="btn btn-success mt-3">
+            Send
+          </button>
+        </div>
+      ) : (
+        <div>
+          <div>Login to write a comment.</div>
+          <button type="button" class="btn btn-success mt-2">
+            Login
+          </button>
+        </div>
+      )}
+
       <div className="mt-5">
         <div className="d-flex flex-column mt-3">
           <div className="d-flex">

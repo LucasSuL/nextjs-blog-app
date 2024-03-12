@@ -53,6 +53,9 @@ a {
 .text-soft {
   color: var(--softTextColor);
 }
+.fs-0{
+  font-size: 55px;
+}
 .fs-7 {
   font-size: 14px;
 }

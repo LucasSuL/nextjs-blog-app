@@ -1,4 +1,4 @@
-import React from "react";
+import Image from "next/image";
 
 const Featured = () => {
   return (
@@ -6,11 +6,22 @@ const Featured = () => {
       <h1 className="display-1 fw-medium">
         <strong>Hey! Lucas here! </strong>Discover my stories and ideas!
       </h1>
-      <div className="row row-cols-1 row-cols-md-2 mt-5 d-flex align-items-center">
-        <div className="col">
-          <img className="mb-3 img-fluid" src="/p1.jpeg" alt="" />
+      <div className="row mt-5 d-flex align-items-center">
+        <div className="col-12 col-md-6">
+          <div
+            className="position-relative d-none d-md-block"
+            style={{ width: "100%", height: "350px", overflow: "hidden" }}
+          >\
+            <Image
+              src="/p1.jpeg"
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              className="position-absolute top-0 start-0 rounded"
+            ></Image>
+          </div>
         </div>
-        <div className="col">
+        <div className="col-12 col-md-6">
           <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
           <p className="text-soft fs-7">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque

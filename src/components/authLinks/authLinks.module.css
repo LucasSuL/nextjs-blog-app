@@ -13,7 +13,7 @@
   background-color: var(--textColor);
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
   .burger {
     display: flex;
   }
@@ -25,15 +25,16 @@
   .responsiveMenu {
     position: absolute;
     left:0;
-    /* background-color: var(--bg); */
+    background-color: var(--bg);
+    
     top: var(--navHeight);
-    height: 120px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 10px;
+    gap: 20px;
     font-size: 18px;
   }
 }

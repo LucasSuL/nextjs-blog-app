@@ -33,7 +33,7 @@ const AuthLinks = () => {
         <div className={styles.line}></div>
         <div className={styles.line}></div>
       </div>
-      {/* {open && (
+      {open && (
         <div className={styles.responsiveMenu}>
           <Link href="/">Homepage</Link>
           <Link href="/">Contact</Link>
@@ -47,7 +47,7 @@ const AuthLinks = () => {
             </>
           )}
         </div>
-      )} */}
+      )}
     </>
   );
 };

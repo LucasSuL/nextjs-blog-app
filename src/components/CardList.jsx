@@ -1,10 +1,14 @@
 import React from "react";
 import Pagination from "@/components/Pagination";
+import Image from "next/image";
 
-const getData = async (page) => {
-  const res = await fetch(`http://localhost:3000/api/posts?page=${page}`, {
-    cache: "no-store",
-  });
+const getData = async (page, cat) => {
+  const res = await fetch(
+    `http://localhost:3000/api/posts?page=${page}&cat=${cat || ""}`,
+    {
+      cache: "no-store",
+    }
+  );
 
   if (!res.ok) {
     throw new Error("Failed");
@@ -13,22 +17,33 @@ const getData = async (page) => {
   return res.json();
 };
 
-const CardList = async ({ page }) => {
-  const { posts, count } = await getData(page);
+const CardList = async ({ page, cat }) => {
+  const { posts, count } = await getData(page, cat);
   const POST_PER_PAGE = 2;
   const hasPrev = page > 1;
   const hasNext = POST_PER_PAGE * page < count;
 
   return (
     <div className="col-12 col-md-8">
-      <h2 className="mt-5">Recent Posts</h2>
+      <h2 className="mt-5 m-0 ">Recent Posts</h2>
 
       {posts?.map((item) => (
-        <div className="row row-cols-1 row-cols-lg-2 mt-4">
-          <div className="col mt-4">
-            <img className="rounded w-100" src="/p1.jpeg" alt=""></img>
+        <div className="row row-cols-1 row-cols-lg-2 mt-4 ">
+          <div className="col mt-2">
+            <div
+              className=" position-relative"
+              style={{ width: "100%", height: "300px", overflow: "hidden" }}
+            >
+              <Image
+                src="/p1.jpeg"
+                alt=""
+                layout="fill"
+                objectFit="cover"
+                className="position-absolute top-0 start-0 rounded"
+              ></Image>
+            </div>
           </div>
-          <div className="col mt-4 d-flex flex-column">
+          <div className="col  d-flex flex-column mt-2">
             <p className="">{`${item.createAt.slice(0, 10)} - ${
               item.catSlug
             }`}</p>

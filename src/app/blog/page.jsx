@@ -3,7 +3,7 @@ import Menu from "@/components/Menu";
 
 const BlogPage = ({ searchParams }) => {
   const page = parseInt(searchParams.page) || 1;
-  const { cat } = searchParams;
+  const { cat } = searchParams; 
 
   return (
     <div className="container">

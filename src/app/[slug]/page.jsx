@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const SinglePage = () => {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5 ">
       <div className="row" >
         <div className="col-12 col-md-6 d-flex flex-column ">
           <h1 className="fw-bold display-4">
@@ -27,7 +27,7 @@ const SinglePage = () => {
           </div>
         </div>
 
-        <div className="col-12 col-sm-6">
+        <div className="col-12 col-md-6">
           <div
             className=" position-relative d-none d-md-block "
             style={{ width: "100%", height: "100%", overflow: "hidden" }}

@@ -4,9 +4,9 @@ import Image from "next/image";
 
 const SinglePage = () => {
   return (
-    <div className="container">
-      <div className="row" style={{ height: "350px" }}>
-        <div className="col-12 col-md-6 d-flex flex-column">
+    <div className="container mt-5">
+      <div className="row" >
+        <div className="col-12 col-md-6 d-flex flex-column ">
           <h1 className="fw-bold display-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </h1>
@@ -27,17 +27,19 @@ const SinglePage = () => {
           </div>
         </div>
 
-        <div
-          className="col-6 position-relative"
-          style={{ width: "100%", height: "100%", overflow: "hidden" }}
-        >
-          <Image
-            src="/p1.jpeg"
-            alt=""
-            layout="fill"
-            objectFit="cover"
-            className="position-absolute top-0 start-0 rounded d-none d-md-block"
-          ></Image>
+        <div className="col-12 col-sm-6">
+          <div
+            className=" position-relative d-none d-md-block "
+            style={{ width: "100%", height: "100%", overflow: "hidden" }}
+          >
+            <Image
+              src="/p1.jpeg"
+              alt=""
+              layout="fill"
+              objectFit="cover"
+              className="position-absolute top-0 start-0 rounded"
+            ></Image>
+          </div>
         </div>
       </div>
       <div className="row">

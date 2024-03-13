@@ -1,4 +1,3 @@
-import React from "react";
 import Pagination from "@/components/Pagination";
 import Image from "next/image";
 import Link from "next/link";
@@ -20,6 +19,8 @@ const getData = async (page, cat) => {
 
 const CardList = async ({ page, cat }) => {
   const { posts, count } = await getData(page, cat);
+  console.log(posts, count);
+  console.log(page, cat);
   const POST_PER_PAGE = 2;
   const hasPrev = page > 1;
   const hasNext = POST_PER_PAGE * page < count;

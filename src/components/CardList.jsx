@@ -1,6 +1,7 @@
 import React from "react";
 import Pagination from "@/components/Pagination";
 import Image from "next/image";
+import Link from "next/link";
 
 const getData = async (page, cat) => {
   const res = await fetch(
@@ -34,29 +35,28 @@ const CardList = async ({ page, cat }) => {
               className=" position-relative"
               style={{ width: "100%", height: "300px", overflow: "hidden" }}
             >
-              <Image
-                src="/p1.jpeg"
-                alt=""
-                layout="fill"
-                objectFit="cover"
-                className="position-absolute top-0 start-0 rounded"
-              ></Image>
+              {item.img && (
+                <Image
+                  src={item.img}
+                  alt=""
+                  layout="fill"
+                  objectFit="cover"
+                  className="position-absolute top-0 start-0 rounded"
+                ></Image>
+              )}
             </div>
           </div>
-          <div className="col  d-flex flex-column mt-2">
+          <div className="col  d-flex flex-column align-items-start mt-2">
             <p className="">{`${item.createAt.slice(0, 10)} - ${
               item.catSlug
             }`}</p>
-            <h3 className="mt-4">{item.title}</h3>
+            <Link href={`/posts/${item.slug}`}>
+              <h3 className="mt-4">{item.title}</h3>
+            </Link>
             <p className="mt-4 text-soft">{item.desc}</p>
-            <p>
-              <a
-                href="#"
-                class="mt-5 align-self-end link link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
-              >
-                Read More
-              </a>
-            </p>
+            <Link href={`/posts/${item.slug}`} class="mt-5 link-offset-2">
+              <p className="">Read More</p>
+            </Link>
           </div>
         </div>
       ))}

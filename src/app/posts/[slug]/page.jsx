@@ -17,7 +17,6 @@ const getData = async (slug) => {
 const SinglePage = async ({ params }) => {
   const { slug } = params;
   const data = await getData(slug);
-  console.log(data ? "y" : "n");
 
   return (
     <div className="container mt-5 ">
@@ -63,7 +62,7 @@ const SinglePage = async ({ params }) => {
       <div className="row">
         <div className="col-12 col-md-8 mt-5 pe-4">
           <div className="" dangerouslySetInnerHTML={{ __html: data?.desc }} />
-          <Comments slug= {slug}/>
+          <Comments postSlug= {slug}/>
         </div>
         <Menu />
       </div>

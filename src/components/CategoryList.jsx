@@ -34,6 +34,7 @@ const CategoryList = async () => {
                   src={item.img}
                   width={32}
                   height={32}
+                  alt=""
                 ></Image>
               )}
               <p className="m-0">{item.title}</p>

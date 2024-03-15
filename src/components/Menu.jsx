@@ -14,7 +14,6 @@ const Menu = () => {
     return (
       <div className="col" key={cat._id}>
         <div
-          key={cat}
           className="text-center rounded p-2 text-capitalize"
           style={{ backgroundColor: catColors[index] }}
         >
@@ -35,9 +34,11 @@ const Menu = () => {
           <p className="mt-2 mb-0 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <p className="mt-1 fs-8 ">
-            John Doe - <span className="text-soft">01.09.2023</span>
-          </p>
+          <div className="d-flex mt-1 fs-7 ">
+            <p>John Doe </p>
+            <p className="ms-2">-</p>
+            <p className="text-soft ms-2">01.09.2023</p>
+          </div>
         </div>
         <div className="mt-3">
           <p className=" rounded-5 text-bg-dark d-inline px-3 p-1 fs-8">
@@ -46,9 +47,11 @@ const Menu = () => {
           <p className="mt-2 mb-0 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <p className="mt-1 fs-8 ">
-            John Doe - <span className="text-soft">01.09.2023</span>
-          </p>
+          <div className="d-flex mt-1 fs-7 ">
+            <p>John Doe </p>
+            <p className="ms-2">-</p>
+            <p className="text-soft ms-2">01.09.2023</p>
+          </div>
         </div>
         <div className="mt-3">
           <p className=" rounded-5 text-bg-dark d-inline px-3 p-1 fs-8">
@@ -57,9 +60,11 @@ const Menu = () => {
           <p className="mt-2 mb-0 ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
-          <p className="mt-1 fs-8 ">
-            John Doe - <span className="text-soft">01.09.2023</span>
-          </p>
+          <div className="d-flex mt-1 fs-7 ">
+            <p>John Doe </p>
+            <p className="ms-2">-</p>
+            <p className="text-soft ms-2">01.09.2023</p>
+          </div>
         </div>
       </div>
       <div>
@@ -90,9 +95,11 @@ const Menu = () => {
               <p className="mt-2 mb-0 ">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
-              <p className="mt-1 fs-8 ">
-                John Doe - <span className="text-soft">01.09.2023</span>
-              </p>
+              <div className="d-flex mt-1 fs-7 ">
+                <p>John Doe </p>
+                <p className="ms-2">-</p>
+                <p className="text-soft ms-2">01.09.2023</p>
+              </div>
             </div>
           </div>
         </div>

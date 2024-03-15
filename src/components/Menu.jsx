@@ -25,7 +25,7 @@ const Menu = () => {
   return (
     <div className="col-12 col-md-4">
       <div>
-        <p className="text-soft mt-5 mb-0">What's hot</p>
+        <p className="text-soft mt-5 mb-0">What&apos;s hot</p>
         <h2 className="mt-1 mb-4">Most Popular</h2>
         <div className="mt-3">
           <p className=" rounded-5 text-bg-dark d-inline px-3 p-1 fs-8">

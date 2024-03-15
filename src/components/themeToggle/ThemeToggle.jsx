@@ -12,7 +12,7 @@ const ThemeToggle = () => {
 
   return (
     <div className={styles.container} onClick={toggle}>
-      <Image src="/moon.png" width={14} height={14} />
+      <Image src="/moon.png" width={14} height={14} alt=""/>
       <div
         className={styles.circle}
         style={
@@ -21,7 +21,7 @@ const ThemeToggle = () => {
             : { right: "2.5px", backgroundColor: "white" }
         }
       ></div>
-      <Image src="/sun.png" width={14} height={14} />
+      <Image src="/sun.png" width={14} height={14} alt=""/>
     </div>
   );
 };

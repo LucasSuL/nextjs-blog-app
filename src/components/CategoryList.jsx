@@ -22,9 +22,8 @@ const CategoryList = async () => {
       <h2 className="mt-5">Popular Categories</h2>
       <div className="row row-cols-2 row-cols-sm-3 row-cols-lg-6">
         {data?.map((item) => (
-          <div className="col">
+          <div className="col" key={item._id}>
             <Link
-              key={item._id}
               href="/"
               className="d-flex align-items-center justify-content-center gap-2 rounded p-3 mt-3 text-capitalize"
               style={{ backgroundColor: `${item.color}` }}

@@ -12,7 +12,7 @@ const Menu = () => {
   ];
   const categories = catNames.map((cat, index) => {
     return (
-      <div className="col">
+      <div className="col" key={cat._id}>
         <div
           key={cat}
           className="text-center rounded p-2 text-capitalize"

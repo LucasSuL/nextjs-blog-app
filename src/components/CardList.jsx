@@ -30,7 +30,7 @@ const CardList = async ({ page, cat }) => {
       <h2 className="mt-5 m-0 ">Recent Posts</h2>
 
       {posts?.map((item) => (
-        <div className="row row-cols-1 row-cols-lg-2 mt-4 ">
+        <div className="row row-cols-1 row-cols-lg-2 mt-4 " key={item._id}>
           <div className="col mt-2">
             <div
               className=" position-relative"

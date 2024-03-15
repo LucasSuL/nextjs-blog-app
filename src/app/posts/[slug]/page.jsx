@@ -16,6 +16,7 @@ const getData = async (slug) => {
 
 const SinglePage = async ({ params }) => {
   const { slug } = params;
+
   const data = await getData(slug);
 
   return (
@@ -28,7 +29,7 @@ const SinglePage = async ({ params }) => {
               <div className="m-0 ">
                 <Image
                   className="rounded-circle"
-                  src={data.user.image}
+                  src={data?.user.image}
                   width={55}
                   height={55}
                   alt=""
@@ -37,7 +38,9 @@ const SinglePage = async ({ params }) => {
             )}
             <div className="ms-3  d-flex align-items-start justify-content-center flex-column">
               <p className="fs-7  m-0">{data?.user.name}</p>
-              <p className="fs-7 text-soft m-0 ">01.09.2023</p>
+              <p className="fs-7 text-soft m-0 ">
+                {data?.createAt.slice(0, 10)}
+              </p>
             </div>
           </div>
         </div>
@@ -62,7 +65,8 @@ const SinglePage = async ({ params }) => {
       <div className="row">
         <div className="col-12 col-md-8 mt-5 pe-4">
           <div className="" dangerouslySetInnerHTML={{ __html: data?.desc }} />
-          <Comments postSlug= {slug}/>
+          {/* <div>{data?.desc}</div> */}
+          <Comments postSlug={slug} />
         </div>
         <Menu />
       </div>

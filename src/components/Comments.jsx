@@ -2,7 +2,7 @@
 
 import { useSession } from "next-auth/react";
 import Image from "next/image";
-import React, { useState } from "react";
+import { useState } from "react";
 import useSWR from "swr";
 
 const fetcher = async (url) => {
@@ -13,7 +13,7 @@ const fetcher = async (url) => {
     console.log("fetcher error");
     throw error;
   }
-  console.log('fetcher success' + data);
+  console.log("fetcher success" + data);
   return data;
 };
 
@@ -57,9 +57,9 @@ const Comments = ({ postSlug }) => {
       ) : (
         <div>
           <div>Login to write a comment.</div>
-          <button type="button" class="btn btn-success mt-2">
+          {/* <button type="button" class="btn btn-success mt-2">
             Login
-          </button>
+          </button> */}
         </div>
       )}
 
@@ -83,7 +83,9 @@ const Comments = ({ postSlug }) => {
                 </div>
                 <div className="ms-3  d-flex align-items-start justify-content-center flex-column">
                   <p className="fs-7  m-0">{item.user.name}</p>
-                  <p className="fs-7 text-soft m-0 ">{item.createAt.slice(0,10)}</p>
+                  <p className="fs-7 text-soft m-0 ">
+                    {item.createAt.slice(0, 10)}
+                  </p>
                 </div>
               </div>
               <p className="mt-2">{item.desc}</p>

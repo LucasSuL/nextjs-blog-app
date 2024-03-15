@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import  { useEffect, useState } from "react";
 import Image from "next/image";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.bubble.css";
+// import ReactQuill from "react-quill";
+// import "react-quill/dist/quill.bubble.css";
 import { useRouter } from "next/navigation";
 import { useSession } from "next-auth/react";
 import {
@@ -175,21 +175,21 @@ const WritePage = () => {
         )}
       </div>
 
-      <ReactQuill
+      {/* <ReactQuill
         // className="color-cust"
         theme="bubble"
         value={value}
         onChange={setValue}
         placeholder="Tell your story..."
-      />
+      /> */}
 
-      {/* <textarea
+      <textarea
         class="form-control mt-3"
         id="exampleFormControlTextarea1"
         placeholder="Tell your story..."
         rows="5"
         onChange={(e) => setValue(e.target.value)}
-      ></textarea> */}
+      ></textarea>
       <button className="btn btn-success" onClick={handleSubmit}>
         Publish
       </button>

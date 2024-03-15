@@ -64,8 +64,8 @@ const SinglePage = async ({ params }) => {
       </div>
       <div className="row">
         <div className="col-12 col-md-8 mt-5 pe-4">
-          <div className="" dangerouslySetInnerHTML={{ __html: data?.desc }} />
-          {/* <div>{data?.desc}</div> */}
+          {/* <div className="" dangerouslySetInnerHTML={{ __html: data?.desc }} /> */}
+          <div>{data?.desc}</div>
           <Comments postSlug={slug} />
         </div>
         <Menu />

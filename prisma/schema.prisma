@@ -10,8 +10,8 @@ generator client {
 
 datasource db {
   provider = "mongodb"
-  url      = env("DATABASE_URL")
-  // url      = "mongodb+srv://lucassu:gjyjlg123@cluster0.e82ocic.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0"
+  // url      = env("DATABASE_URL")
+  url      = "mongodb+srv://lucassu:gjyjlg123@cluster0.e82ocic.mongodb.net/blog?retryWrites=true&w=majority&appName=Cluster0"
 }
 
 model Account {

@@ -15,6 +15,7 @@ const getData = async (slug) => {
 };
 
 const SinglePage = async ({ params }) => {
+  console.log('env: '+ process.env.DATABASE_URL);
   const { slug } = params;
 
   const data = await getData(slug);
